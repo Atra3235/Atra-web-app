@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         fun scanQr() {
             runOnUiThread {
                 IntentIntegrator(this@MainActivity)
-                    .setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES)
+                    .setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
                     .setPrompt("QR کد رو بگیر جلوی دوربین")
                     .setBeepEnabled(true)
                     .initiateScan()
